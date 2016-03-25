@@ -1,0 +1,6 @@
+pane	qiu	1	:editor	1	:*	1	:/home/qiu	0	emacsclient	:emacsclient -cnw .tmux.conf
+pane	qiu	1	:editor	1	:*	2	:/home/qiu	1	zsh	:
+pane	qiu	2	:shell	0	:#-	1	:/home/qiu	1	zsh	:
+window	qiu	1	1	:*	0264,191x50,0,0{95x50,0,0,0,95x50,96,0,4}
+window	qiu	2	0	:#-	af3e,191x50,0,0,1
+state	qiu	
