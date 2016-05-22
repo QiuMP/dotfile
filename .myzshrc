@@ -1,0 +1,18 @@
+ZSH_THEME="ys"
+DISABLE_AUTO_TITLE="true"
+plugins=(vi-mode command-not-found common-aliases history pip systemd tmux tmuxinator git sudo z colored-man cp zsh-syntax-highlighting)
+
+# export EDITOR='emacsclient -cnw'
+# alias vim="emacsclient -cnw"
+
+setopt EXTENDED_HISTORY
+if [[ "$TERM" == "xterm" ]]; then
+    export TERM=xterm-256color
+fi
+
+if [[ "$TERM" != "screen-256color" ]]; then
+    tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+    exit
+fi
+
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
