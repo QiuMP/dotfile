@@ -5,6 +5,8 @@ plugins=(vi-mode command-not-found common-aliases history pip systemd tmux tmuxi
 # export EDITOR='emacsclient -cnw'
 # alias vim="emacsclient -cnw"
 
+set -C
+
 setopt EXTENDED_HISTORY
 if [[ "$TERM" == "xterm" ]]; then
     export TERM=xterm-256color
