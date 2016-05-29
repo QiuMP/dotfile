@@ -6,6 +6,7 @@ plugins=(vi-mode command-not-found common-aliases history pip systemd tmux tmuxi
 # alias vim="emacsclient -cnw"
 
 set -C
+bindkey -M viins '\e.' insert-last-word
 
 setopt EXTENDED_HISTORY
 if [[ "$TERM" == "xterm" ]]; then
