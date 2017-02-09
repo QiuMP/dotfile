@@ -1,6 +1,6 @@
 #!/bin/bash
 
-usr=qiu
+usr=qiumupo
 
 if [ ! -r /root ]; then
 	exit 0

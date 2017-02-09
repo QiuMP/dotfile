@@ -3,7 +3,7 @@
 #variables
 dir=~/dotfile
 olddir=~/dotfiles_old
-files=".myzshrc .tmux .tmux.conf .spacemacs.d .vimrc .vim"
+files=".myzshrc .tmux .tmux.conf .spacemacs.d .vimrc .vim .mostrc"
 
 mkdir -p $olddir
 mkdir ~/tmux-log/ #Tmux

@@ -13,15 +13,9 @@ set nocp
 set hls
 set is
 
-"The setting of GUI
-set guioptions-=T
-set guioptions-=r
-set guifont=Consolas\ 14
-
 "The setting of color
 colorscheme molokai
 syntax enable
-syntax on
 
 "The setting of fold
 set foldenable

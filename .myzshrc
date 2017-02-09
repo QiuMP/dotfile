@@ -1,12 +1,15 @@
+export PATH=/opt/puppetlabs/bin:/sbin:/usr/sbin:$PATH
+
 ZSH_THEME="ys"
 DISABLE_AUTO_TITLE="true"
-plugins=(vi-mode command-not-found common-aliases history pip systemd tmux tmuxinator git sudo z colored-man cp zsh-syntax-highlighting)
+plugins=(vi-mode debian command-not-found common-aliases history django python pip systemd tmux tmuxinator git sudo z cp zsh-syntax-highlighting supervisor)
 
 # export EDITOR='emacsclient -cnw'
 # alias vim="emacsclient -cnw"
 
-set -C
 bindkey -M viins '\e.' insert-last-word
+bindkey "^R" history-incremental-pattern-search-backward
+bindkey "^T" history-incremental-pattern-search-forward
 
 setopt EXTENDED_HISTORY
 if [[ "$TERM" == "xterm" ]]; then
@@ -19,3 +22,32 @@ if [[ "$TERM" != "screen-256color" ]]; then
 fi
 
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+
+alias ia="ip addr"
+alias il="ip link"
+alias ir="ip route"
+alias in="ip neigh"
+
+alias apt="aptitude"
+alias ari="sudo aptitude reinstall"
+
+# export LESSOPEN="| pygmentize -O style=monokai -f console256 -g %s"
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
+
+# less
+# search
+export LESS_TERMCAP_so=$(printf   "\e[47;30m")
+export LESS_TERMCAP_se=$(printf   "\e[0m") 
+
+man() {  # blod
+	env \
+    LESS_TERMCAP_mb=$(printf   "\e[1;31m") \
+    LESS_TERMCAP_md=$(printf   "\e[1;31m") \
+    LESS_TERMCAP_me=$(printf   "\e[0m") \
+    LESS_TERMCAP_ue=$(printf   "\e[0m") \
+    LESS_TERMCAP_us=$(printf   "\e[1;32m") \
+	man "$@"
+}
+
+export EDITOR='vim'
