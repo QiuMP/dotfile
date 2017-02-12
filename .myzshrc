@@ -51,3 +51,5 @@ man() {  # blod
 }
 
 export EDITOR='vim'
+
+alias sudo='sudo '
