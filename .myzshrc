@@ -31,6 +31,10 @@ alias in="ip neigh"
 alias apt="aptitude"
 alias ari="sudo aptitude reinstall"
 
+alias pip="sudo pip"
+
+alias sudo='sudo '
+
 # export LESSOPEN="| pygmentize -O style=monokai -f console256 -g %s"
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -R '
@@ -52,4 +56,3 @@ man() {  # blod
 
 export EDITOR='vim'
 
-alias sudo='sudo '
