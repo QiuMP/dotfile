@@ -1,10 +1,4 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/etc/supervisor'
-let g:netrw_dirhist_2='/etc/apt/preferences.d'
-let g:netrw_dirhist_3='/lib/systemd/system/reboot.target.wants'
-let g:netrw_dirhist_4='/home/qiumupo/a'
-let g:netrw_dirhist_5='/home/qiumupo/.oh-my-zsh/plugins'
-let g:netrw_dirhist_6='/home/qiumupo/test'
-let g:netrw_dirhist_7='/home/qiumupo/.tmux'
-let g:netrw_dirhist_8='/etc/default'
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/usr/share/pyshared/supervisor/skel'
+let g:netrw_dirhist_2='/etc/mysql/mysql.conf.d'

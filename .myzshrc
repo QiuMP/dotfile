@@ -16,10 +16,10 @@ if [[ "$TERM" == "xterm" ]]; then
     export TERM=xterm-256color
 fi
 
-if [[ "$TERM" != "screen-256color" ]]; then
-    tmux attach-session -t "$USER" || tmux new-session -s "$USER"
-    exit
-fi
+# if [[ "$TERM" != "screen-256color" ]]; then
+#     tmux attach-session -t "$USER" || tmux new-session -s "$USER"
+#     exit
+# fi
 
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
