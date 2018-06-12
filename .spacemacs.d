@@ -1,0 +1,1 @@
+/Users/qiumupo/Library/Mobile Documents/com~apple~CloudDocs/Mackup/.spacemacs.d
