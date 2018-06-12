@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# contributor: qiumupo <qiumupo@foxmail.com>
+# name: class_comment
+# key: cco
+# --
+"""Comment
+
+Attributes:
+
+"""

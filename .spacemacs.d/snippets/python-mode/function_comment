@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# contributor: qiumupo <qiumupo@foxmail.com>
+# name: function_comment
+# key: fco
+# --
+"""comment
+
+Args:
+
+Returns:
+
+Raises:
+
+"""
